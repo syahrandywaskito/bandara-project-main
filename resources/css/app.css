@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  @apply font-inter
+}
+
+.navbar-fixed {
+
+  @apply fixed z-[9999] bg-white bg-opacity-70 shadow-md;
+  backdrop-filter: blur(5px);
+}
+
+.hamburger-line {
+
+  @apply w-[30px] h-[3px] my-2 block bg-slate-950 rounded-xl
+
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45
+}
+
+/* - dashboard - */
+.page-header {
+  @apply inline-flex items-center text-base-dark text-base md:text-lg xl:text-xl uppercase font-bold
+}
+
+.page-sub-header {
+  @apply text-sm lg:text-base text-primary-dark 
+}
+/* -- */
