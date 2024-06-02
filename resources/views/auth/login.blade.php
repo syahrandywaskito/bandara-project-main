@@ -10,10 +10,10 @@
 
   <section class="bg-indigo-50 pt-10">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a href="{{ route('homepage') }}" class="flex items-center mb-6 text-2xl font-semibold text-gray-900">
+        <a href="{{ route('homepage') }}" class="flex items-center mb-6 text-2xl font-semibold text-gray-900" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
             <img class="w-32" src="{{asset('img/dishub.png')}}" alt="logo">
         </a>
-        <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
+        <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <form class="space-y-4 md:space-y-6" action="{{route('login.auth')}}" method="POST">
 

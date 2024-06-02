@@ -12,7 +12,7 @@
       <div class="container">
         <div class="w-full px-0 md:px-4">
 
-          <div class="bg-white shadow-lg rounded-lg">
+          <div class="bg-white shadow-lg rounded-lg" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
             <div class="py-10 px-4 mx-auto">
               <div class="p-2 md:p-12 mb-4">
                 <h1 class=" uppercase text-base md:text-lg lg:text-2xl font-bold mb-2 text-start md:text-center">

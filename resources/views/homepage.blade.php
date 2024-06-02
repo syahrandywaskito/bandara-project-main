@@ -12,7 +12,7 @@
       <div class="container">
         <div class="flex flex-wrap">
 
-          <div class="w-full px-4 self-center lg:w-1/2">
+          <div class="w-full px-4 self-center lg:w-1/2" data-aos="fade-right" data-aos-duration="500">
             <h1 class="text-base font-semibold text-primary md:text-xl mb-5 tracking-wider">Bandara Abdulrachman Saleh
               <span class="block font-bold text-dark text-3xl mt-2 lg:text-5xl">Teknik dan Pelayanan Jasa</span>
             </h1>
@@ -21,7 +21,7 @@
             </p>
           </div>
 
-          <div class="w-full self-end px-4 lg:w-1/2"> 
+          <div class="w-full self-end px-4 lg:w-1/2" data-aos="fade-left" data-aos-duration="500"> 
             <div class="mt-10 relative lg:mt-9 lg:right-0">
               <img src="{{asset('img/dishub.png')}}" alt="dishub" class="max-w-full lg:max-w-[75%] mx-auto">
             </div>  
@@ -42,7 +42,7 @@
 
         <div class="flex flex-wrap">
           @if ($berita_main)
-          <div class="w-full px-0 md:px-4 self-center lg:w-1/2">
+          <div class="w-full px-0 md:px-4 self-center lg:w-1/2" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
             @foreach ($berita_main as $list)
               <div class="bg-primary-light border border-gray-200 rounded-lg shadow">
                   <a href="{{ route('lihat-berita', $list->id) }}">
@@ -67,7 +67,7 @@
                 
           
           <div class="w-full px-0 md:px-4 self-center lg:w-1/2">
-              <div class="flex-row space-y-5 mt-5 xl:mt-0">
+              <div class="flex-row space-y-5 mt-5 xl:mt-0" data-aos="fade-left" data-aos-delay="500" data-aos-duration="500">
                 @foreach ($berita_side as $list)
                   <a href="{{ route('lihat-berita', $list->id) }}" class="flex space-x-5 items-center bg-primary-light rounded-lg shadow-md hover:translate-x-1 transition duration-200 pr-5 hover:grayscale">
                     <div>
@@ -125,7 +125,7 @@
             </div>
           </div>
 
-          <div class="pt-2 text-right">
+          <div class="pt-2 text-right" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
               <div class="pb-6 flex justify-between items-center">
                 <div class="text-sm md:text-base">
                   <h2 id="header-jadwal" class="font-montserrat font-semibold uppercase inline-flex items-center cursor-default">
@@ -141,8 +141,8 @@
               </div>
           </div>
 
-          <div class="relative overflow-x-auto overflow-y-hidden rounded-lg shadow-lg">
-            <table id="jadwal-departure" class="w-full text-sm text-left bg-gray-50">
+          <div class="relative overflow-x-auto overflow-y-hidden rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500">
+            <table id="jadwal-departure" class="w-full text-sm text-left bg-gray-50" >
               <thead class="text-xs font-montserrat sm:text-sm text-center text-gray-50 uppercase bg-indigo-900">
                 <tr>
                   <th scope="col" class="px-6 py-3">

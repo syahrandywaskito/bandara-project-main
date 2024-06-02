@@ -12,14 +12,14 @@
       <div class="container">
         <div class="w-full px-0 md:px-4">
 
-            <div class="w-full p-4 text-center bg-primary-light rounded-lg shadow-lg sm:p-8">
-                <h5 class="mb-2 md:mb-4 text-sm sm:text-base lg:text-xl uppercase font-bold font-montserrat text-primary-dark" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-full p-4 text-center bg-primary-light rounded-lg shadow-lg sm:p-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+                <h5 class="mb-2 md:mb-4 text-sm sm:text-base lg:text-xl uppercase font-bold font-montserrat text-primary-dark">
                     {{$berita->judul}}
                 </h5>
-                <div class="flex justify-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex justify-center">
                     <img src="{{asset('storage/berita/'.$berita->image)}}" alt="" class="rounded-lg my-2 w-[40%]" />
                 </div>
-                <div data-aos="fade-up" data-aos-delay="300" data-aos-ease="ease-in-out">
+                <div>
                     <p class="my-5 text-primary-dark">
                     {!!str_replace('<p>', '<p class="text-xs sm:text-sm md:text-base font-montserrat">', $berita->isi)!!}
                     </p>
