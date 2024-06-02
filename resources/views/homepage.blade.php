@@ -240,12 +240,12 @@
                       </td>
 
                       <td class="px-6 py-4">
-                        {{ $data->tujuan }}
+                        {{ $data->dari }}
                       </td>
 
                       <td class="px-6 py-4">
                         @php 
-                          $jam = $data->waktu_berangkat; 
+                          $jam = $data->waktu_datang; 
                           $carbon = \Carbon\Carbon::parse($jam); 
                           $formatted = $carbon->isoFormat('HH:m')
                         @endphp 
